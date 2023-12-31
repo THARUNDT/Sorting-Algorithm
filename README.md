@@ -18,25 +18,46 @@ To write a program to perform selection sort and insertion sort using python pro
 4.	Break the loop and insert X.
 5.	Repeat the steps 2 to 4 for sorting all the elements in the array.
 ## Program:
-i)	#Selection Sort
-```
-
-
-
-
-
-```
+i) #Selection Sort
+# Program to sort the elements in the list using the Selection Sort algorithm.
+# Developed by:HARIHARAN J
+# RegisterNumber:212223240047
+~~~
+def selection_sort(nums):
+    for i in range(len(nums)):
+        low_index=i
+        for j in range(i+1,len(nums)):
+            if nums[j] < nums[low_index]:
+                low_index=j
+        nums[i],nums[low_index]=nums[low_index],nums[i]
+    return nums
+    
+list_of_nums = eval(input())
+value = selection_sort(list_of_nums)
+print(value)
+~~~
 ii)	#Insertion Sort
-```
-
-
-
-
-
-
-```
-
+# Program to sort the elements in the list using the Insertion Sort algorithm.
+# Developed by:HARIHARAN J
+# RegisterNumber:23011967 
+~~~
+def insertion_sort(nums):
+    for i in range(1,len(nums)):
+       item=nums[i]
+       j=i-1
+       while j>=0 and nums[j]>item:
+           nums[j+1]=nums[j]
+           j-=1
+       nums[j+1]=item
+    return nums 
+list_of_nums = eval(input())
+insertion_sort(list_of_nums)
+print(list_of_nums)
+~~~
 ## Output:
+![Screenshot 2023-12-31 233903](https://github.com/THARUNDT/Sorting-Algorithm/assets/144871537/90a6f696-825e-41db-b52d-e326e55e1c05)
+![Screenshot 2023-12-31 234706](https://github.com/THARUNDT/Sorting-Algorithm/assets/144871537/2147e69c-b4c5-4f14-aa6f-30d67522d80d)
+
 
 
 ## Result:
