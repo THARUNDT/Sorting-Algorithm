@@ -20,8 +20,8 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i) #Selection Sort
 # Program to sort the elements in the list using the Selection Sort algorithm.
-# Developed by:HARIHARAN J
-# RegisterNumber:212223240047
+# Developed by:THARUN D
+# RegisterNumber:212223240167
 ~~~
 def selection_sort(nums):
     for i in range(len(nums)):
@@ -38,8 +38,8 @@ print(value)
 ~~~
 ii)	#Insertion Sort
 # Program to sort the elements in the list using the Insertion Sort algorithm.
-# Developed by:HARIHARAN J
-# RegisterNumber:23011967 
+# Developed by:THARUN D
+# RegisterNumber:212223240167
 ~~~
 def insertion_sort(nums):
     for i in range(1,len(nums)):
